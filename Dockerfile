@@ -8,7 +8,7 @@ ADD murmur.ini /data/murmur.ini
 VOLUME ["/data"]
 EXPOSE 64738/udp
 
-RUN certbot certonly --standalone --agree-tos --email roman.pogorelchuk@gmail.com -d mumble.sirius-srv.net
+#RUN certbot certonly --standalone --agree-tos --email roman.pogorelchuk@gmail.com -d mumble.sirius-srv.net
 
 #USER murmur
 ENTRYPOINT ["/usr/bin/murmurd", "-fg", "-ini", "/data/murmur.ini"]
